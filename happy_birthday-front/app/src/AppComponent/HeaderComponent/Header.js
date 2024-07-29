@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 const { DateTime } = require("luxon");
 
 class HeaderComponent extends Component {
@@ -25,8 +25,9 @@ class HeaderComponent extends Component {
 
   render() {
     const { currentTime } = this.state;
-    const currentDate = DateTime.now().setLocale('fr').toFormat('cccc dd MMMM yyyy')
-
+    const currentDate = DateTime.now()
+      .setLocale("fr")
+      .toFormat("cccc dd MMMM yyyy");
 
     return (
       <div className="fixed min-w-full bg-white py-6 px-12 flex border-b-2 border-slate-900 place-content-between font-bison text-4xl tracking-wide uppercase">
@@ -35,7 +36,7 @@ class HeaderComponent extends Component {
         </div>
         <div>
           <span>
-            {currentDate}| 
+            {currentDate}|
             {currentTime.toLocaleString(DateTime.TIME_24_WITH_SECONDS)}
           </span>
         </div>
