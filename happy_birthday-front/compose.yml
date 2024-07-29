@@ -1,0 +1,16 @@
+version: '3.6'
+services:
+  react:
+    container_name: react
+    image: 'node:slim'
+    working_dir: /home/node/app
+    env_file:
+      - .env
+    command:
+      - /bin/sh
+      - '-c'
+      - 'npm install && npm start'
+    ports:
+      - '3001:3001'
+    volumes:
+      - './app:/home/node/app'
