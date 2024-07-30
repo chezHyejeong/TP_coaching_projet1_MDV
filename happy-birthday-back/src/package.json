@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node app.js",
     "dev": "node --watch app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "author": "",
   "license": "ISC",
@@ -18,5 +18,11 @@
     "luxon": "^3.3.0",
     "mysql": "^2.18.1",
     "mysql2": "^3.11.0"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.4.8",
+    "@testing-library/react": "^12.1.5",
+    "jest": "^27.5.1",
+    "supertest": "^6.1.3"
   }
 }
