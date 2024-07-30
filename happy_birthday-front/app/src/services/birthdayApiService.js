@@ -15,7 +15,7 @@ export const getTodaysBirthday = async () => {
 };
 
 export const getRandomQuote = async () => {
-  let queryUrl = `${apiBaseUrl}/api/random`;
+  let queryUrl = `${apiBaseUrl}/api/randomquote`;
 
   try {
     const response = await axios.get(queryUrl);
